@@ -1,8 +1,6 @@
 ![Vonage](.github/vonage.png)
 
-# Project Title
-
-Project Description
+# Vonage Verify API with Node.js and Express.js
 
 ## Code of Conduct
 
