@@ -2,6 +2,8 @@
 
 # Vonage Verify API with Node.js and Express.js
 
+Details on how to build this project are in [the accompanying blog post](https://www.nexmo.com/blog/2020/07/17/how-to-add-two-factor-authentication-with-node-js-and-express)
+
 ## Code of Conduct
 
 In the interest of fostering an open and welcoming environment, we strive to make participation in our project and our community a harassment-free experience for everyone. Please check out our [Code of Conduct](.github/CODE_OF_CONDUCT.md) in full.
