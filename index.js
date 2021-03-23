@@ -1,19 +1,19 @@
+const express = require('express')
 const app = require('express')()
-const bodyParser = require('body-parser')
 const nunjucks = require('nunjucks')
 const Nexmo = require('nexmo')
 
-app.use(bodyParser.json())
-app.use(bodyParser.urlencoded({ extended: false }))
+app.use(express.json())
+app.use(express.urlencoded({ extended: false }))
 nunjucks.configure('views', { express: app })
 
-const nexmo = new Nexmo({ 
+const nexmo = new Nexmo({
   apiKey: process.env.NEXMO_KEY,
   apiSecret: process.env.NEXMO_SECRET
 })
 
-app.get('/', (req, res) => { 
-  res.render('index.html', { message: 'Hello, world!' }) 
+app.get('/', (req, res) => {
+  res.render('index.html', { message: 'Hello, world!' })
 })
 
 app.post('/verify', (req, res) => {
